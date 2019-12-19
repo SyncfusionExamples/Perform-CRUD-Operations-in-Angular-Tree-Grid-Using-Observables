@@ -1,0 +1,45 @@
+<ejs-treegrid
+  [dataSource]="tasks | async"
+  hasChildMapping="isParent"
+  parentIdMapping="ParentID"
+  idMapping="id"
+  [editSettings]="editSettings"
+  [toolbar]="toolbar"
+  height="470"
+  (dataStateChange)="dataStateChange($event)"
+  (dataSourceChanged)="dataSourceChanged($event)"
+  ><e-columns>
+    <e-column
+      field="id"
+      headerText="Task ID"
+      width="120"
+      textAlign="Right"
+      isPrimaryKey="true"
+      type="number"
+    ></e-column>
+    <e-column field="TaskName" headerText="Task Name" width="225"></e-column>
+    <e-column
+      field="StartDate"
+      headerText="Start Date"
+      width="150"
+      format="yMd"
+      type="datetime"
+      editType="datepickeredit"
+    ></e-column>
+    <e-column
+      field="Duration"
+      headerText="Duration"
+      type="number"
+      textAlign="Right"
+      width="130"
+      editType="numericedit"
+    ></e-column>
+    <e-column
+      field="Progress"
+      headerText="Progress"
+      type="number"
+      textAlign="Right"
+      width="130"
+      editType="numericedit"
+    ></e-column> </e-columns
+></ejs-treegrid>
