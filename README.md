@@ -2,6 +2,8 @@
 
 Learn how you can perform CRUD operations in Angular Tree Grid with observable data. This example contains code to perform CRUD operations like insert, update, and delete in the Angular Tree Grid with observable data using the Angular in-memory web API module.
 
+Watch the video now: https://www.syncfusion.com/tutorial-videos/angular/treegrid?title=perform-crud-operations-in-angular-tree-grid-using
+
 Documentation: https://ej2.syncfusion.com/angular/documentation/treegrid/observables/?no-cache=1#perform-crud-operations
 
 
