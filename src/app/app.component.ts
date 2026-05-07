@@ -1,16 +1,21 @@
 import { Component, OnInit } from "@angular/core";
 import {
   EditSettingsModel,
-  DataStateChangeEventArgs
+  DataStateChangeEventArgs,
+  TreeGridModule
 } from "@syncfusion/ej2-angular-treegrid";
 import { Observable } from "rxjs";
 import { TaskStoreService } from "./task-store.service";
 import { DataSourceChangedEventArgs } from "@syncfusion/ej2-grids";
+import { AsyncPipe } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.css"],
+  standalone: true,
+  imports: [TreeGridModule, AsyncPipe, HttpClientModule]
 })
 export class AppComponent implements OnInit {
   public editSettings: EditSettingsModel;

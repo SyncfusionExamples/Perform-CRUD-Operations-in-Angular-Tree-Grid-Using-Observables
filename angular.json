@@ -23,8 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/@syncfusion/ej2-material-theme/styles/material.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -58,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "editing:build"
+            "buildTarget": "editing:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "editing:build:production"
+              "buildTarget": "editing:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "editing:build"
+            "buildTarget": "editing:build"
           }
         },
         "test": {
@@ -80,8 +79,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css",
-              "./node_modules/@syncfusion/ej2-material-theme/styles/material.css"
+              "src/styles.css"
             ],
             "scripts": [],
             "assets": [
@@ -133,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "editing"
+  "defaultProject": "editing",
+  "cli": {
+    "analytics": "034de265-f285-424f-bfa4-c8c195d2e03f"
+  }
 }
