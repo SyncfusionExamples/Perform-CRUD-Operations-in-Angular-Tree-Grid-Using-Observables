@@ -12,14 +12,12 @@ import { TaskDataService } from "./task-data.service";
 import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  declarations: [AppComponent],
   imports: [
     BrowserModule,
     TreeGridModule,
     InMemoryWebApiModule.forRoot(TaskDataService),
     HttpClientModule
   ],
-  providers: [EditService, ToolbarService],
-  bootstrap: [AppComponent]
+  providers: [EditService, ToolbarService]
 })
 export class AppModule {}
